@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TitledPane fx:controller="controller.SummaryController" animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="483.0" prefWidth="711.0" text="Podsumowanie" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+  <content>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="470.0" prefWidth="709.0">
+          <Label layoutX="64.0" layoutY="32.0" text="Koszt"/>
+          <TextField fx:id="costText" layoutX="138.0" layoutY="28.0"/>
+          <Label layoutX="341.0" layoutY="32.0" text="Nazwa"/>
+          <TextField fx:id="nameText" layoutX="418.0" layoutY="28.0"/>
+          <Label layoutX="70.0" layoutY="95.0" text="Cel"/>
+          <TextField fx:id="dietPurposeText" layoutX="138.0" layoutY="91.0"/>
+          <Label layoutX="345.0" layoutY="95.0" text="Adres"/>
+          <Label layoutX="24.0" layoutY="157.0" text="Dane osobowe"/>
+          <TextField fx:id="addressText" layoutX="418.0" layoutY="91.0"/>
+          <TextField fx:id="personalDataText" layoutX="138.0" layoutY="153.0"/>
+          <DatePicker fx:id="startDateText" layoutX="418.0" layoutY="153.0"/>
+          <Label layoutX="309.0" layoutY="157.0" text="Data rozpoczęcia"/>
+          <ComboBox fx:id="promotion" layoutX="138.0" layoutY="216.0" prefWidth="150.0"/>
+          <Label layoutX="45.0" layoutY="220.0" text="Promocje"/>
+          <Label layoutX="341.0" layoutY="220.0" text="Rabat"/>
+          <TextField fx:id="discountText" layoutX="418.0" layoutY="216.0"/>
+          <Button onAction="#accept" layoutX="54.0" layoutY="367.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="244.0"
+                  text="Akceptuj"/>
+          <Button onAction="#cancel" layoutX="421.0" layoutY="369.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="144.0"
+                  text="Anuluj"/>
+      </AnchorPane>
+  </content>
+</TitledPane>

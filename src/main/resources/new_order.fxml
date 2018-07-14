@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TitledPane fx:controller="controller.OrderController" animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="552.0" prefWidth="714.0" text="Nowe zamówienie" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+         <children>
+            <Label layoutX="42.0" layoutY="39.0" prefHeight="43.0" prefWidth="113.0" text="Wyszukaj dietę:" />
+            <TableView fx:id="dietTable" layoutX="32.0" layoutY="156.0" prefHeight="288.0" prefWidth="650.0">
+              <columns>
+                <TableColumn fx:id="dietNameColumn" prefWidth="202.0" text="Nazwa" />
+                <TableColumn fx:id="dietPurposeColumn" prefWidth="217.0" text="Cel" />
+                  <TableColumn fx:id="dietCostColumn" prefWidth="230.0" text="Koszt" />
+              </columns>
+            </TableView>
+            <TextField layoutX="172.0" fx:id="searchField" layoutY="48.0" prefHeight="25.0" prefWidth="435.0" />
+            <Button onAction="#searchDiet" layoutX="215.0" layoutY="105.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="290.0" text="Szukaj" />
+            <Button layoutX="42.0" onAction="#accept" layoutY="469.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="181.0" text="Akceptuj" />
+            <Button layoutX="523.0" onAction="#cancel" layoutY="469.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="159.0" text="Anuluj" />
+            <Button layoutX="277.0" fx:id="createButton" onAction="#createNew" layoutY="469.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="178.0" text="Stwórz nową" />
+         </children></AnchorPane>
+  </content>
+</TitledPane>

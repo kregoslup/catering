@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<TitledPane fx:controller="controller.DashboardController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="449.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+   <children>
+      <TableView fx:id="ordersTable" layoutX="46.0" layoutY="154.0" prefHeight="251.0" prefWidth="509.0">
+        <columns>
+          <TableColumn fx:id="orderNameColumn" prefWidth="251.0" text="Nazwa" />
+          <TableColumn fx:id="orderStatusColumn" prefWidth="257.0" text="Status" />
+        </columns>
+      </TableView>
+      <Label layoutX="238.0" layoutY="115.0" text="Twoje zamówienia">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="46.0" layoutY="42.0" mnemonicParsing="false" onAction="#newOrder" text="Nowe zamówienie" />
+      <Button layoutX="495.0" layoutY="42.0" mnemonicParsing="false" onAction="#close" text="Zakończ" />
+   </children></AnchorPane>
+    </content>
+</TitledPane>
